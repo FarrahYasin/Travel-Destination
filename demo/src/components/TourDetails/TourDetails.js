@@ -1,9 +1,4 @@
-// export default function TourDetails (props) {
-//     <div>
-//         iuhiiggu
-//     </div>
-// }
-
+import './TourDetails.css'
 import { useParams } from "react-router-dom";
 import { useState } from 'react';
 
@@ -11,7 +6,7 @@ export default function TourDetails (props) {
 
    let {id} = useParams();
    console.log(id);
-   let newArr=props.d``.find((element)=> element.id === id );
+   let newArr=props.dataJson2.find((city)=> city.id === id );
    console.log(newArr);
 
    const [isReadMore,setIsReadMore]=useState(true);
@@ -21,20 +16,20 @@ export default function TourDetails (props) {
    };
     return(
      
-     <div>
+     <div className='div3'>
          
-         <h1>{newArr[0].name}</h1>
-         <p>
-         <h3>Info:</h3>
-         {isReadMore ? newArr[0].info.slice(0, 150) : newArr[0].info}
-         <button onClick={seetext}>
+         <h2>{newArr.name}</h2>
+         <p className='p2'>
+         Info:
+         {isReadMore ? newArr.info.slice(0, 150) : newArr.info}
+         <button className='b1' onClick={seetext}>
          {isReadMore ? "...see more" : " see less"}  
           </button> 
           </p>
          
-         <p><h3>Travell price:</h3>{newArr[0].price}$</p>
+         {/* <p>Travell price:{newArr.price}$</p> */}
          
-         <img src={newArr[0].image} alt={newArr[0].name} />
+         {/* <img src={newArr.image} alt={newArr.name} /> */}
 
 
      </div>

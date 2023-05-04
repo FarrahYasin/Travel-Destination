@@ -1,9 +1,9 @@
 
 import Tour from "../tours/tour/Tour";
-
+import './Tours.css'
 export default function Tours(props) {
     return(
-        <div>
+        <div className="div2">
      {props.d1.map(item =>{
     
     return ( 

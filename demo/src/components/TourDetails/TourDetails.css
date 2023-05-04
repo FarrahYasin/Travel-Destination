@@ -1,0 +1,15 @@
+.div3{
+    border: 5px dashed rgb(80, 87, 134);
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 40px;
+    padding-left: 19px;
+}
+.b1{
+    margin-top: 30px;
+
+background-color: rgb(97, 131, 161);
+color: aliceblue;
+width: 180px;
+height:30px;
+}
