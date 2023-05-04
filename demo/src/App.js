@@ -1,4 +1,6 @@
 import './App.css';
+// import Header from "./components/header/Header"
+
 import Home from "./components/home/Home";
 import dataf2 from "../src/data/db.json";
 import TourDetails from './components/TourDetails/TourDetails';

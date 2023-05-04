@@ -1,0 +1,35 @@
+
+.header1{
+    display: flex;
+    background-color: #7284c2;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5.5%;
+    align-items:center;
+    width:100%
+}
+.header1 h1{
+    text-shadow: #a5a8a9 8px 0 6px;
+    color:#000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 0%; 
+    font-size: 30px; 
+    
+}
+
+.header Link{
+    color:#000000;
+    text-shadow: #000000 6px 0 6px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top:1.5%;
+    padding-left: 300px;
+}
+.sheader :hover{
+    color:#000000;
+    text-shadow: #6e3131 6px 0 6px;
+    font-size: 20px;
+    
+}
