@@ -1,6 +1,7 @@
 import './TourDetails.css'
 import { useParams } from "react-router-dom";
 import { useState } from 'react';
+import Header from '../header/Header'
 
 export default function TourDetails (props) {   
 
@@ -15,7 +16,8 @@ export default function TourDetails (props) {
     setIsReadMore(!isReadMore)
    };
     return(
-     
+        <div>
+    <Header></Header>
      <div className='div3'>
          
          <h2>{newArr.name}</h2>
@@ -33,7 +35,7 @@ export default function TourDetails (props) {
 
 
      </div>
-
+     </div>
     )
 }
 
